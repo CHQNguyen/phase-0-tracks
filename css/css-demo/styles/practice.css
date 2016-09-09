@@ -1,0 +1,15 @@
+section#contact-info {
+  font-size: .8em;
+}
+
+.job  {
+	background-color: #e9e5dc;
+	padding: 20px 30px;
+	border-radius: 5px;
+}
+.unorder-list {
+	font-size: .8em;
+}
+ul > li {
+	font-size: .4em;
+}
