@@ -48,3 +48,14 @@ a {
   clear: both;
   background: #A2A2A2;
 }
+
+@media all and (max-width: 800px ) {
+  #wrapper {
+    width: 100%;
+    font-size: 70%;
+  }
+  img {
+    width: 100%;
+
+  }
+}
