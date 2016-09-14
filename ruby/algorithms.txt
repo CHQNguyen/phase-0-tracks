@@ -1,0 +1,53 @@
+How your robot should use an elevator
+
+1.Accept verbal or input of which floor to access.
+2.save floor entry as x.
+3.Access online database blueprint of current building in the current location.
+4.locate elevator with in the current floor plan navigate to elevator.
+	a.stop 2 feet away from elevator door entrance.
+	b.Scan for access of elevator if doors are open move to step 5.
+	c.if closed scan 45 degree left for call button if locate move to step e.
+	d.scan 45 degree right for call button if locate move to step e.
+	e.move parallel with elevator in the direction scanned until button is at 0 degree.
+	f.deploy robot hands to press call button.
+	g.return to step a position.
+	h.scan ever 10 seconds for elevator door to open.
+5.enter 2 feet past elevator door and turn 180 degree.
+	a.scan 45 degree left for key pad if locate move to step c.
+	b.scan 45 degree right for key pad .
+	c.move parallel with elevator in the direction scanned until key pad is at 0 degree.
+	d.scan pad for corresponding number as x
+	e.deploy robot hands to press call number label x.
+6.move back to step 5 position 
+7.scan every 10 second for elevator door to open.
+8.exit elevator by passing elevator door by 2 feet.
+9.resume robot duties
+
+Getting ready in the morning
+
+1.wake up to ringing of alarm clock
+2.look at current time.
+	a.hit snoozes and go back to sleep
+3.repeat steps 1 and 2 at least 3 times.
+4.remove blankets and sit up from bed.
+5.exit bed and navigate to bathroom
+6.turn on water by spinning hot water knob once and cold water knob twice.
+7.remove clothe and enter shower.
+	a.apply soup to hair face and body.
+	b.wash hair face and then body.
+	c.turn off shower by turning hot knob back once and cold knob back twice.
+8.grab towel and dry off body 
+9.wrap towel around waist
+10. exit shower and move forward to sink.
+11.pick up tooth brush and activate tooth brushing algorithm.
+12.wash face once again and using face towel to dry face.
+13.exit bath back to bedroom and change into preset clothe.
+14.throw dirty face and bath towel into laundry basket.
+15.grab clean face and bath towel from closet.
+16.enter bathroom replace bath and face towel in designated location.
+17.return to sink activate hair comb algorithms(with wax).
+18.locate and navigate to front door of house
+19.put on shoes and exit the house.
+20.enter car and activate driving algorithm
+
+
