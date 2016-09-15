@@ -1,0 +1,22 @@
+header {
+    background-image: url(https://assets-cdn.github.com/images/modules/logos_page/Octocat.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 800px;
+    white-space: normal;
+}
+body {
+  white-space: nowrap;
+}
+
+.column-1,.column-2{
+  font-family: monospace, times, sans-serif;
+  background: lightblue;
+  display: inline-block;
+  width: 50%;
+  white-space: normal;
+  vertical-align: top;
+}
+
