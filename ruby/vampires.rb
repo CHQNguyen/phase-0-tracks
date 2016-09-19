@@ -14,7 +14,7 @@ while counter > 0
 
   puts "What year were you born?"
   year_born = gets.chomp.to_i
-  current_year = Time.now.to_i
+  current_year = Time.now.year
   if (current_year - year_born) == age
   age = 1
   else 
