@@ -16,28 +16,27 @@ while counter > 0
   year_born = gets.chomp.to_i
   current_year = Time.now.to_i
   if (current_year - year_born) == age
-  age = true
+  age = 1
   else 
-  age = false
+  age = 2
   end
 
   puts "Our company cafeteria serves garlic bread. Should we order something for you?"
   garlic = gets.chomp
   if garlic == "yes"
-  garlic = true
+  garlic = 1
   elsif garlic == "no"
-  garlic = false
+  garlic = 2
   end
 
   puts "Would you like to enroll in the company's health insurance?"
   health = gets.chomp
   if health == "yes"
-  health = true
+  health = 1
   elsif health == "no"
-  health = false
+  health = 2
   end
   puts "Do you have any allergies to list?"
-
     allergies = gets.chomp.downcase
 
   if allergies == "yes"
@@ -53,11 +52,11 @@ while counter > 0
   end
   end
 
-  if age == true && garlic == true && health == true
+  if age == 1 && garlic == 1 && health == 1
   answer = "probably not a vampire"
-  elsif age == false && (garlic == false || health = false)
+  elsif age == 2 && (garlic == 1 || health == 1)
   answer = "probably a vampire"
-  elsif age == false && garlic == false && health = false
+  elsif age == 2 && garlic == 2 && health == 2
   answer = "almost certainly a vampire."
   end
   
