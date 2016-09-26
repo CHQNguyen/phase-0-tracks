@@ -44,7 +44,7 @@
 # "z".<???>
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
-#"z".each_codepoint {|c| print c, ' ' }
+"z".ord
 
 # "How many times does the letter 'a' appear in this string?".<???>
 # => 4
