@@ -1,5 +1,5 @@
 module Shout
-	def self.yell_angrily(words)
+	def yell_angrily(words)
 		puts words + "!!!" + " :("
 	end
 	def yelling_happily(words)
@@ -7,7 +7,7 @@ module Shout
 	end
 end
 
-Shout.yell_angrily("roar")
+#Shout.yell_angrily("roar")
 #Shout.yelling_happily("damn")
 
 class AngryPerson
@@ -19,8 +19,11 @@ class Parrot
 end
 
 angry_person = AngryPerson.new
-angry_person.self("Where")
+angry_person.yell_angrily("Where are my keys")
 
+parrot = Parrot.new
+parrot.yell_angrily("Squak, Where are my keys")
+parrot.yelling_happily("squak")
 
 module Flight
   def take_off(altitude)
