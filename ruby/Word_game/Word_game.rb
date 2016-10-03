@@ -10,16 +10,30 @@
 
 #logic code
 #create game class
-#initial method to split word to array
-#guess will equal length of word
-#set a game over variable to false
+class Guessingame
+	attr_reader :guess_count, :game_over, :guess_word
 
-#method to change word into (underscore)
+	#initial method to split word to array
+	def initialize(hidden_word)
+		@guess_word = hidden_word.chars.to_a
+		#guess will equal length of word
+		@guess_count = hidden_word.length
+		#set a game over variable to false
+		@game_over = false
+	end
+	#method to change word into (underscore)
+	def hide_word
+		placeholder = ""
 
-#method to check input 
+	end
+	#method to check input 
+
+end
 
 #user inferface
+
 #promopt new game ask for hidden word input
+
 
 #WHILE loop to take input 
 #IF correct fill in hidden word
@@ -28,6 +42,8 @@
 #ELSE lose a guess and try again
 #lose game if guess equal 0
 
+#test
+test = []
+test = Guessingame.new("rock")
 
-
-
+p test
