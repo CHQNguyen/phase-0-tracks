@@ -19,7 +19,9 @@
 #method to check input 
 
 #user inferface
-#WHILE loop to take input
+#promopt new game ask for hidden word input
+
+#WHILE loop to take input 
 #IF correct fill in hidden word
 #end game if all letters guessed
 
