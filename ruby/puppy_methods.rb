@@ -53,8 +53,8 @@ chinh = Student.new
 
 arry = []
 
-(0..3).each do |i|
-	arry = chinh.home_work(10)
+(0..50).each do |i|
+	chinh.home_work(10)
 	chinh.drink_tea("black")
 end
 
