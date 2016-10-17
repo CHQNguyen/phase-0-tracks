@@ -1,0 +1,25 @@
+sqlite> SELECT * FROM hero;
+Josh|19|warrior|1
+Kevin|24|rogue|1
+Liana|20|mage|2
+Jen|18|priset|2
+Ajin|29|monk|2
+Grif|31|paladin|2
+Kictor|25|lancer|1
+sqlite> UPDATE hero SET age=27 WHERE name="Kictor";
+sqlite> SELECT * FROM hero, hero_team WHERE hero.hero_team = hero_team.id;
+Josh|19|warrior|1|1|Damage Dealer
+Kevin|24|rogue|1|1|Damage Dealer
+Liana|20|mage|2|2|Holy Might
+Jen|18|priset|2|2|Holy Might
+Ajin|29|monk|2|2|Holy Might
+Grif|31|paladin|2|2|Holy Might
+Kictor|27|lancer|1|1|Damage Dealer
+sqlite> SELECT hero.name, hero_team.party_name FROM hero JOIN hero_team ON hero.hero_team = hero_team.id;
+Josh|Damage Dealer
+Kevin|Damage Dealer
+Liana|Holy Might
+Jen|Holy Might
+Ajin|Holy Might
+Grif|Holy Might
+Kictor|Damage Dealer
